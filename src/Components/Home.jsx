@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import dice from "../../public/images/dices 1.png";
+import dice from "/images/dices 1.png";
 
-const Home = () => {
+const Home = ({toggle}) => {
   return (
     <>
       <Container>
@@ -10,7 +10,7 @@ const Home = () => {
         </div>
         <div className="content">
           <h1>Dice Game</h1>
-          <Button>Play Now</Button>
+          <Button onClick={toggle}>Play Now</Button>
         </div>
       </Container>
     </>
