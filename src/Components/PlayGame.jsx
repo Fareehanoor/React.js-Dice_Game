@@ -1,15 +1,28 @@
-// import styled from "styled-components";
+import styled from "styled-components";
 
 import NumberSelector from "./NumberSelector";
 import TotalScore from "./TotalScore";
+import RollDice from "./RollDice";
 
 const PlayGame = () => {
   return (
-    <main>
+    <MainContainer>
+      <div className="top-section">
       <TotalScore />
       <NumberSelector/>
-    </main>
+      </div>
+      <RollDice />
+    </MainContainer>
   );
 };
 
 export default PlayGame;
+
+const MainContainer = styled.main`
+padding-top:50px;
+.top-section{
+  display : flex;
+  justify-content : space-around;
+  align-items : end;
+}
+`;
