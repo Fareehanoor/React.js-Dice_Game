@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import dice from "/images/dices 1.png";
+import {Button} from '../styled/button.js'
 
 const Home = ({toggle}) => {
   return (
@@ -32,22 +33,5 @@ const Container = styled.div`
   }
 
 `;
-const Button = styled.button`
- 
-  color: white;
-  background-color: black;
-  min-width: 220px;
-  padding: 10px 18px 10px 18px;
-  border-radius: 5px;
-  border:none;
-  font-size : 16px;
-  transition : 0.3s background ease-in ;
 
-  &:hover{
-    background-color : white;
-    color : black;
-    border : 1px solid black;
-    transition : 0.3s background ease-in ;
 
-  }
-`;
